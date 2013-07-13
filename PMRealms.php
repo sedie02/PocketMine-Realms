@@ -2,7 +2,7 @@
 
 /*
 __PocketMine Plugin__
-name=PocketMine Realms
+name=PocketMine Realms 
 description=Automatic server listing on PocketMine Realms and more features.
 version=0.1
 author=shoghicp
@@ -19,9 +19,9 @@ class PMRealms implements Plugin{
 	
 	public function init(){
 		$this->config = new Config($this->api->plugin->configPath($this)."config.yml", CONFIG_YAML, array(
-			"ownerName" => "",
-			"externalAddress" => "",
-			"externalPort" => "",
+			"ownerName" => "",mrdiamondchicken
+			"externalAddress" => "",192.168.1.13
+			"externalPort" => "",192.168.1.1
 		));
 		
 		$error = 0;
@@ -74,5 +74,7 @@ class PMRealms implements Plugin{
 	public function __destruct(){
 		$this->config->save();
 	}
+	save
+	
 
 }
